@@ -1,0 +1,404 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVQ4T6XTsStFYRjH8c+VTUoGBsUgKyb/AoNFhJRJZqwmFpPJLsVgkQxKRqvZImQwKAMGhAE99d7b7XWc3O5bp3Oec57n+/5+z/uciiZXpcl6RYBhXOMlg/en+Kb+fRHgCh04RS++8IoxbGGlDBDAW/T9YW0fc2WASRyU9OUbA6jZyC2sYgnzSfZlgoX/HuxiFsfVTeoB7VhAJN9jBkMp8RwnKd7BGZ7jWxUQiW8p3sRaSj7CB6YQataxiFa04SK3MILH1PF3dKdTuEMoDOnxXFs5IJSE9G2EklG0YC/t/Ku/RXMQcqcxiAeEkk+MF51O2SgfojMVxyBNNALownI6uqgLJRt4yiFlCsJ7DE7kxD2uf/WgoR/0BwwmNRFppcefAAAAAElFTkSuQmCC">
+    <title>Ioana.World</title>
+  <link href="/app.js" rel="preload" as="script"><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);</style><style type="text/css">.nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #373D3F;
+  padding: 35px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.nav a:hover {
+  color: #EC81A9;
+}
+@media (max-width: 767px) {
+.nav a {
+    font-size: 1em;
+    padding: 35px 8px 15px 8px;
+    height: 150px;
+}
+}
+.card {
+  background-color: #FFFFFF;
+  border-top: 2px solid #EC81A9;
+  border-bottom: 2px solid #EC81A9;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 20px 100px rgba(50, 50, 93, 0.15), 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 20px 100px rgba(50, 50, 93, 0.15), 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+  margin-bottom: 70px;
+}
+.card a {
+    color: #373D3F;
+}
+.card a:hover {
+      color: #EC81A9;
+}
+.card .header h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 35px;
+    padding: 0 45px;
+}
+.card .content {
+    text-align: justify;
+}
+.card .content img {
+      width: 100%;
+}
+.card .content p {
+      padding: 0 45px;
+}
+.card .read-more {
+    text-align: center;
+    padding: 6px 20px;
+    border: 2px solid #EC81A9;
+    border-radius: 50px;
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    width: 90px;
+    -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+}
+.card .read-more:hover, .card .read-more:active {
+      background: #EC81A9;
+      color: #FFF;
+      -webkit-transition: all .2s linear;
+      transition: all .2s linear;
+      cursor: pointer;
+}
+.card .read-more:hover a, .card .read-more:active a {
+        color: #FFF;
+}
+.card .read-more a {
+      text-decoration: none;
+}
+.card .read-more a:hover {
+        color: #FFF;
+}
+.card .footer {
+    padding: 25px 45px 25px 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.card .footer .skill {
+      border: 2px solid #EC81A9;
+      border-radius: 6px;
+      padding: 6px;
+      margin: 2px;
+      font-size: .9em;
+      /* Disable selection */
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+@media (max-width: 767px) {
+.card .header h3 {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    padding: 0 25px;
+}
+.card .content p {
+    padding: 0 25px;
+    font-size: 0.8em;
+}
+.card .footer {
+    padding: 0 25px 10px 25px;
+}
+.card .footer a {
+    float: none;
+}
+.card .footer .skill {
+    font-size: 0.65em;
+}
+.card .read-more {
+    padding: 6px 10px;
+    font-size: 0.75em;
+}
+}
+@-webkit-keyframes pulse {
+0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(236, 129, 169, 0.7);
+}
+70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(236, 129, 169, 0);
+}
+100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(236, 129, 169, 0);
+}
+}
+@keyframes pulse {
+0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(236, 129, 169, 0.7);
+            box-shadow: 0 0 0 0 rgba(236, 129, 169, 0.7);
+}
+70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(236, 129, 169, 0);
+            box-shadow: 0 0 0 10px rgba(236, 129, 169, 0);
+}
+100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(236, 129, 169, 0);
+            box-shadow: 0 0 0 0 rgba(236, 129, 169, 0);
+}
+}
+.bar {
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  background-color: #e4e3e5;
+  margin: 0 auto;
+  font-family: monospace;
+  padding: auto;
+  float: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.bar .button {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.bar .red {
+    background-color: #f96256;
+    left: -47%;
+    bottom: -20%;
+}
+.bar .yellow {
+    background-color: #fdbc3d;
+    left: -44%;
+    bottom: 40%;
+}
+.bar .green {
+    background-color: #33c948;
+    left: -41%;
+    bottom: 99%;
+}
+.screen {
+  background-color: #38434F;
+  width: 100%;
+  border-radius: 0 0 4px 4px;
+  padding: 20px 0 35px 0;
+  -webkit-box-shadow: 0px 20px 100px rgba(50, 50, 93, 0.15), 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 20px 100px rgba(50, 50, 93, 0.15), 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+  line-height: 15px;
+}
+.screen .command {
+    margin: 0;
+    color: #EC81A9;
+    font-family: monospace;
+    font-size: 1em;
+    text-align: left;
+    position: static;
+    padding-left: 30px;
+}
+.screen .command::before {
+    color: #FFFFFF;
+    content: "> ";
+}
+.screen .response {
+    margin: 0 0 25px 0;
+    color: #FFFFFF;
+    font-family: monospace;
+    font-size: 1em;
+    text-align: left;
+    position: static;
+    padding-left: 30px;
+}
+.screen .response::before {
+    color: #FFFFFF;
+    content: "< ";
+}
+.screen .array::before {
+    content: "< [";
+}
+.screen .array::after {
+    content: "]";
+}
+.screen .array .array-element::before {
+    content: "\"";
+}
+.screen .array .array-element::after {
+    content: "\"";
+}
+.cursor-white {
+  background: rgba(247, 247, 247, 0.65);
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+.cursor-main-color {
+  background-color: #EC81A9;
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+@media (max-width: 767px) {
+.screen {
+    font-size: 0.8em;
+}
+.bar .red {
+    left: -44%;
+    bottom: -20%;
+}
+.bar .yellow {
+    left: -38%;
+    bottom: 40%;
+}
+.bar .green {
+    left: -32%;
+    bottom: 99%;
+}
+}
+.contact {
+  text-align: center;
+  margin: -35px 0 70px 0;
+}
+.contact .email {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+.contact .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact .links a {
+    text-decoration: none;
+    color: #373D3F;
+    padding: 8px;
+}
+.contact .links a:hover {
+      color: #EC81A9;
+}
+@media (max-width: 767px) {
+.contact .email {
+    font-size: 1em;
+}
+a {
+    font-size: .75em;
+}
+}
+body {
+  color: #373D3F;
+  background-color: #F6F9FC;
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.hero-logo {
+  color: #EC81A9;
+  font-size: 4.5em;
+  font-family: monospace;
+  padding: 20% 35px 70px 35px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.hero-logo::before {
+  content: "> ";
+}
+.hero-description {
+  font-size: 1.3em;
+  padding: 0 35px 70px 35px;
+  text-indent: 35px;
+  text-align: justify;
+}
+.section {
+  margin: 70px 0 70px 0;
+  text-align: center;
+  font-size: 1.75em;
+}
+@media (max-width: 767px) {
+.hero-logo {
+    font-size: 1.7em;
+}
+.hero-description {
+    font-size: 1em;
+}
+}
+@media (min-width: 576px) {
+.container {
+    max-width: 540px;
+}
+}
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+}
+}
+@media (min-width: 992px) {
+.container {
+    max-width: 960px;
+}
+}
+@media (min-width: 1200px) {
+.container {
+    max-width: 1140px;
+}
+}
+@-webkit-keyframes blinker {
+50% {
+    opacity: 0;
+}
+}
+@keyframes blinker {
+50% {
+    opacity: 0;
+}
+}
+</style></head>
+  <body>
+    <noscript>
+      <strong>We're sorry but website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"><div class="container"><div class="nav"><a href="#">Home</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="https://drive.google.com/file/d/1qNbRcSgR82zhEJjFwfruKMLoxne-qrUY/view?usp=sharing">Resume</a></div><div class="hero-logo">
+		Ioana_Moraru<span class="cursor-main-color">&nbsp;</span></div><div class="hero-description">
+		I am a tech girl who is passionate about coding and algorithms. I am a hard-working person and I always want to get thing done in time. I am eager to learn new programming languages and concepts, so I am looking for a challenging development position.
+	</div><div class="terminal"><div class="bar"><div class="button red"></div><div class="button yellow"></div><div class="button green"></div></div><div class="screen"><p class="command">Ioana.currentLocation</p><p class="response">Bucharest, Romania</p><p class="command">Ioana.experience</p><p class="response">STEP Intern @ Google, London</p><p class="command">Ioana.interests</p><p class="response array"><span class="array-element">Coding</span>,
+            <span class="array-element">Science</span>,
+            <span class="array-element">Cat lover</span>,
+            <span class="array-element">Traveling</span>,
+            <span class="array-element">Learning</span></p><p class="command">Ioana.education</p><p class="response">Computer Science - Bachelor's Degree - University POLITEHNICA of Bucharest</p><p class="command">Ioana.skills</p><p class="response array"><span class="array-element">Data structures</span>,
+            <span class="array-element">C/C++</span>,
+            <span class="array-element">Java</span>,
+            <span class="array-element">Haskell</span>,
+            <span class="array-element">Git</span>,
+            <span class="array-element">Linux</span></p><p class="command"><span class="cursor-white">&nbsp;</span></p></div></div><div id="projects" class="section">Projects</div><div class="card"><div class="header"><h3>Programare cu rabdare</h3></div><div class="content"><img src="/img/programare.793855ca.jpg"><p>
+			Pe 16 februarie 2019 am participat la cercul de informatica <a href="http://programarecurabdare.ro/">Programare cu rabdare</a> din Bacau unde le-am vorbit participantilor despre experienta mea la Google si am rezolvat impreuna probleme de interviu.
+		</p><p> 
+			Puteti gasi rezolvarea problemelor <a href="https://github.com/ioanam14/interview_questions.git">aici</a> si prezentarea <a href="https://drive.google.com/open?id=1B8nym90tVxXE1COirkoYHq8q30F5SyXV">aici</a>.
+		</p></div><!----><div class="footer"><span class="skill">Java</span><span class="skill">Teaching</span><span class="skill">Interview</span></div></div><div class="card"><div class="header"><h3>Google Internship</h3></div><div class="content"><img src="/img/internship.c079d286.jpg"><p>
+			Bună, sunt Ioana și în prezent sunt studentă în anul 3 la Facultatea de Automatică și Calculatoare în București. Vara aceasta am avut parte de o experiență cu totul nouă pentru mine care s-a dovedit a fi foarte interesantă: am fost STEP (Summer Trainee Engineering Program) Intern Software Engineer la Google în Londra. 
+		</p><p>
+			Acest timp de internship este destinat studenților care termină anul 1 din 3 ani de licență sau anul 2 din 4 ani. Prin urmare, acesta este un program bazat mai mult pe învățare pentru persoane care nu au prea multă experiență în acest domeniu. Față de un internship normal, acesta se deosebește prin faptul că se lucrează în perechi și proiectele sunt mai puțin dificile. Pentru mine acest internship a fost prima oară când am lucrat în industrie și pot spune că a fost un început excelent pentru viitoarea mea carieră în domeniul IT&amp;C.
+		</p></div><div class="read-more"><a href="https://codette.ro/blog/step-internship-software-engineer-google-london/">Read more</a></div><!----></div><div class="card"><div class="header"><h3>Online blog</h3></div><div class="content"><img src="/img/blog.9f948603.jpg"><p>
+			This is a website where a user can create an account, make a post, see others' posts and comment on posts. You can find the 
+			repo <a href="https://github.com/ioanam14/blog">here</a>.
+		</p></div><!----><div class="footer"><span class="skill">PHP</span><span class="skill">Laravel</span><span class="skill">MySQL</span></div></div><div id="contact" class="section">Contact</div><div class="contact"><div class="email">ioanamoraru14@gmail.com</div><div class="links"><a href="https://github.com/ioanam14">Github</a><a href="https://instagram.com/ioanamoraru14">Instagram</a><a href="https://linkedin.com/in/ioana-moraru-789b59122">LinkedIn</a><a href="https://facebook.com/ioana.moraru.14">Facebook</a></div></div></div></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="/app.js"></script>
+
+</body></html>
